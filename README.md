@@ -1,2 +1,2 @@
-# Nginx-Nodejs
-Docker Compose을 이용한 로드 밸런싱 테스트 프로젝트
+# Nginx-Nodejs-Sample
+Docker Compose를 활용한 CI/CD 자동화 샘플 프로젝트
