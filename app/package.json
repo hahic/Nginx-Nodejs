@@ -1,0 +1,14 @@
+{
+  "name": "nodejs_server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "description": "NodeJS Server",
+  "dependencies": {
+    "express": "^4.16.3",
+    "uuid": "^3.2.1"
+  }
+}

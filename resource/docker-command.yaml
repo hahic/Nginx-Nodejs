@@ -1,0 +1,7 @@
+-- app
+1. docker build -t nginx-test-app:1.0.0 .
+2. docker run -d -p 1180:3000 --rm --name test-app nginx-test-app:1.0.0
+
+
+-- nginx
+1. docker build -t nginx-test-proxy:1.0.0 .

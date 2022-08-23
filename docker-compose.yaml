@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  app-01:
+    container_name: test-app-01
+    image: nginx-test-app:1.0.0
+    restart: always
+    expose:
+      - 3000
+
+  app-02:
+    container_name: test-app-02
+    image: nginx-test-app:1.0.0
+    restart: always 
+    expose:
+      - 3000
+
+  nginx:
+    container_name: test-proxy
+    image: nginx
+    restart: always
+    ports:
+      - 1180:80
+    volumes:
+      - './nginx/nginx.conf:/etc/nginx/nginx.conf'
